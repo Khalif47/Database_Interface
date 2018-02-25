@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% titleblock %}
+register
+{% endblock %}
+
+{% bodyblock %}
+<h1> Register for Islamic Membership </h1>
+<form action="{url_for('submit')}" method="post">
+    Name: <input name="name" type="text"/>
+    <br/>
+    Last: <input name="last" type="text"/>
+    <br/>
+    <input type="submit" value="Register"/>
+</form>
+{% endblock %}
